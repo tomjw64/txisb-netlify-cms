@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Get Wet
 image: /img/home-jumbotron.jpg
 heading: Get Wet
 subheading: Support sustainable farming while enjoying a cup
