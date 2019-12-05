@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Get Wet
+title: Test
 image: /img/home-jumbotron.jpg
 heading: Get Wet
 subheading: Support sustainable farming while enjoying a cup
