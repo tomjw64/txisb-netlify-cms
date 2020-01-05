@@ -17,6 +17,18 @@ export const EventPageTemplate = ({ title, eventHosts, content, contentComponent
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              <h2>
+                Hosts of TXISB
+              </h2>
+              <table>
+                <th>
+                  <td>Event Year</td>
+                  <td>Host School</td>
+                </th>
+                {eventHosts.forEach((year, host) => {
+                  return <tr><td>{year}</td><td>{host}</td></tr>
+                })}
+              </table>
             </div>
           </div>
         </div>
@@ -27,6 +39,7 @@ export const EventPageTemplate = ({ title, eventHosts, content, contentComponent
 
 EventPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  eventHosts: PropTypes.array,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -39,7 +52,7 @@ const EventPage = ({ data }) => {
       <EventPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        hosts={post.frontmatter.eventHosts}
+        eventHosts={post.frontmatter.eventHosts}
         content={post.html}
       />
     </Layout>
@@ -58,7 +71,10 @@ export const EventPageQuery = graphql`
       html
       frontmatter {
         title
-        eventHosts
+        eventHosts {
+          year
+          host
+        }
       }
     }
   }
