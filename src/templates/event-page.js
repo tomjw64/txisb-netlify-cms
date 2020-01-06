@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const EventPageTemplate = ({ title, eventHosts, content, contentComponent }) => {
+export const EventPageTemplate = ({ title, eventHosts, locationAddressLines, gMapsLocationEmbedLink, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -17,17 +17,40 @@ export const EventPageTemplate = ({ title, eventHosts, content, contentComponent
                 {title}
               </h2>
               <PageContent className="content" content={content} />
-              <h2>
+            </div>
+            <div className="section">
+              <h2 className="is-size-4 has-text-weight-bold is-bold-light">
+                Location
+              </h2>
+              <div className="address">
+                {locationAddressLines.map((line, i) => {
+                  return <span className="address-line" key={i}>{line}</span>
+                })}
+              </div>
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe title="location-map" width="100%" height="500" id="gmap_canvas" src={gMapsLocationEmbedLink} frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  <a href="https://www.embedgooglemap.org">embedgooglemap.org</a>
+                </div>
+                <style>{'.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}'}</style>
+              </div>
+            </div>
+            <div className="section">
+              <h2 className="is-size-4 has-text-weight-bold is-bold-light">
                 Hosts of TXISB
               </h2>
-              <table>
-                <th>
-                  <td>Event Year</td>
-                  <td>Host School</td>
-                </th>
-                {eventHosts.forEach((year, host) => {
-                  return <tr><td>{year}</td><td>{host}</td></tr>
-                })}
+              <table className="event-hosts-table">
+                <thead>
+                  <tr>
+                    <th>Event Year</th>
+                    <th>Host School</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {eventHosts.map(({year, host}, i) => {
+                    return <tr key={i}><td>{year}</td><td>{host}</td></tr>
+                  })}
+                </tbody>
               </table>
             </div>
           </div>
@@ -53,6 +76,8 @@ const EventPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         eventHosts={post.frontmatter.eventHosts}
+        locationAddressLines={post.frontmatter.locationAddressLines}
+        gMapsLocationEmbedLink={post.frontmatter.gMapsLocationEmbedLink}
         content={post.html}
       />
     </Layout>
@@ -75,6 +100,8 @@ export const EventPageQuery = graphql`
           year
           host
         }
+        locationAddressLines
+        gMapsLocationEmbedLink
       }
     }
   }
