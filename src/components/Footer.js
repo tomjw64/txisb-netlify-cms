@@ -57,7 +57,8 @@ const Footer = class extends React.Component {
                   <span className="attribution-title">Attribution</span>
                   <ul>
                     <li>TXISB logo created by Elizabeth Christensen</li>
-                    <li>Sword and shoe icons created by Freepik</li>
+                    <li>Modified Sword and shoe icons originally created by Freepik</li>
+                    <li>Modified Favicons originally created by Good Ware</li>
                   </ul>
                 </section>
               </div>
