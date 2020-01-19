@@ -2,13 +2,8 @@
 templateKey: 'schedule-page'
 path: /schedule
 title: Schedule
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
 day: Saturday, February 29th, 2020
-calendarHeight: 800
+scheduleHeight: 800
 scheduleTheme:
   - type: class
     color: aliceblue
@@ -18,7 +13,7 @@ scheduleTheme:
     color: lightgrey
   - type: competition
     color: cornflowerblue
-schedule:
+scheduleData:
   - location: location a
     startTime: 540
     duration: 90
@@ -62,3 +57,7 @@ schedule:
     title: comp 1
     description: m&m
 ---
+Kaldi is the ultimate spot for coffee lovers who want to learn about their
+java’s origin and support the farmers that grew it. We take coffee production,
+roasting and brewing seriously and we’re glad to pass that knowledge to
+anyone.

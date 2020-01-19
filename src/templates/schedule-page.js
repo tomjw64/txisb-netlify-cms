@@ -5,7 +5,7 @@ import Schedule from '../components/Schedule'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const SchedulePageTemplate = ({ title, day, calendarHeight, description, scheduleData, scheduleTheme, contentComponent }) => {
+export const SchedulePageTemplate = ({ title, day, scheduleHeight, description, scheduleData, scheduleTheme, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -21,7 +21,7 @@ export const SchedulePageTemplate = ({ title, day, calendarHeight, description, 
               <h2 className="is-size-4 has-text-weight-bold is-bold-light" style={{marginBottom: '1rem'}}>
                 {day}
               </h2>
-              <Schedule scheduleTheme={scheduleTheme} scheduleData={scheduleData} height={calendarHeight} unit={'px'}/>
+              <Schedule scheduleTheme={scheduleTheme} scheduleData={scheduleData} height={scheduleHeight} unit={'px'}/>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ export const SchedulePageTemplate = ({ title, day, calendarHeight, description, 
 SchedulePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   day: PropTypes.string,
-  calendarHeight: PropTypes.number,
+  scheduleHeight: PropTypes.number,
   scheduleData: PropTypes.arrayOf(
     PropTypes.shape({
       location: PropTypes.string,
@@ -63,9 +63,9 @@ const SchedulePage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         day={post.frontmatter.day}
-        calendarHeight={post.frontmatter.calendarHeight}
-        description={post.frontmatter.description}
-        scheduleData={post.frontmatter.schedule}
+        scheduleHeight={post.frontmatter.scheduleHeight}
+        description={post.html}
+        scheduleData={post.frontmatter.scheduleData}
         scheduleTheme={post.frontmatter.scheduleTheme}
       />
     </Layout>
@@ -85,12 +85,12 @@ export const SchedulePageQuery = graphql`
       frontmatter {
         title
         day
-        description
+        scheduleHeight
         scheduleTheme {
           type
           color
         }
-        schedule {
+        scheduleData {
           location
           startTime
           duration

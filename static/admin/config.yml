@@ -68,6 +68,38 @@ collections:
              widget: "list",
              field: {label: "Line", name: "line", widget: "string"}}
           - {label: "Location Link", name: "gMapsLocationEmbedLink", widget: "string"}
+      - file: "src/pages/schedule/index.md"
+        label: "Schedule"
+        name: "schedule"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Daty", name: "day", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Schedule Height", name: "scheduleHeight", widget: "number"}
+          - label: "Schedule Theme"
+            name: "scheduleTheme"
+            widget: "list"
+            fields:
+              - {label: "Type", name: "type", widget: "string"}
+              - {label: "Color", name: "color", widget: "string"}
+          - label: "Schedule Data"
+            name: "scheduleData"
+            widget: "list"
+            fields:
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Start Time", name: "startTime", widget: "number"}
+              - {label: "Duration", name: "duration", widget: "number"}
+              - {label: "Type", name: "type", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+      - file: "src/pages/register/index.md"
+        label: "Register Page"
+        name: "register"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Register Link", name: "registerLink", widget: "string"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

@@ -13,8 +13,8 @@ const SchedulePagePreview = ({ entry, widgetFor }) => {
   <SchedulePageTemplate
     title={entry.getIn(['data', 'title'])}
     day={entry.getIn(['data', 'day'])}
-    calendarHeight={entry.getIn(['data', 'calendarHeight'])}
-    description={entry.getIn(['data', 'description'])}
+    calendarHeight={entry.getIn(['data', 'scheduleHeight'])}
+    description={widgetFor('body')}
     scheduleData={scheduleData}
     scheduleTheme={scheduleTheme}
   />

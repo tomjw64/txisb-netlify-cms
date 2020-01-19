@@ -12,11 +12,8 @@ const hashColor = input => {
 }
 
 const themeColor = (theme, type) => {
-  console.log("searching type", type)
   for (const entry of theme) {
-    console.log("check type", entry.type)
     if (entry.type === type) {
-      console.log("match", entry.color)
       return entry.color
     }
   }
@@ -64,9 +61,9 @@ const Schedule = ({scheduleTheme, scheduleData, height, unit}) => {
       display: 'flex',
       flexDirection: 'row'
     }}>
-      {/* <div className="schedule-legend column"></div> */}
-      {uniqueLocations.map(location => {
+      {uniqueLocations.map((location, i) => {
         return <LocationSchedule
+                  key={i}
                   scheduleTheme={scheduleTheme}
                   startTime={startTime}
                   height={height}
@@ -97,7 +94,8 @@ const LocationSchedule = ({scheduleTheme, events, scale, startTime, unit, height
         height: `${height}${unit}`,
         position: 'relative'
       }}>
-        {events.map(event => <Event
+        {events.map((event, i) => <Event
+          key={i}
           scheduleTheme={scheduleTheme}
           unit={unit}
           startTime={startTime}
