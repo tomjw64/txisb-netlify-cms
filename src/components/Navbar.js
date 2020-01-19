@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
+import facebook from '../img/social/facebook.svg'
 import logo from '../img/logo.png'
 
 const Navbar = class extends React.Component {
@@ -71,6 +72,16 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
+              <a
+                className="navbar-item"
+                href="https://www.facebook.com/TXISB/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="icon">
+                  <img src={facebook} alt="Facebook" />
+                </span>
+              </a>
               <a
                 className="navbar-item"
                 href="https://github.com/tomjw64/txisb-netlify-cms"
