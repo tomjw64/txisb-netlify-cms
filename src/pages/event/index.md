@@ -10,7 +10,9 @@ eventHosts:
   - year: 2020
     host: Texas A&M University
 gMapsLocationEmbedLink: "https://maps.google.com/maps?q=museum%20of%20the%20american%20gi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-locationAddressLines: ["Museum of the American GI", "19124 TX-6 S, College Station, Texas 77845"]
+locationAddressLines: 
+  - "Museum of the American GI"
+  - "19124 TX-6 S, College Station, Texas 77845"
 ---
 The Texas Intercollegiate Swing Battle (TXISB) is an opportunity for universities across Texas to come together and share their love of swing dancing through collaboration, learning, and competition! TXISB started in 2018, and 2020 will be our third annual event.
 

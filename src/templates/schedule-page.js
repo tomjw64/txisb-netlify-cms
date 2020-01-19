@@ -33,9 +33,24 @@ export const SchedulePageTemplate = ({ title, day, calendarHeight, description, 
 SchedulePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   day: PropTypes.string,
-  scheduleData: PropTypes.array,
-  scheduleTheme: PropTypes.array,
-  content: PropTypes.string,
+  calendarHeight: PropTypes.number,
+  scheduleData: PropTypes.arrayOf(
+    PropTypes.shape({
+      location: PropTypes.string,
+      startTime: PropTypes.number,
+      duration: PropTypes.number,
+      type: PropTypes.string,
+      title: PropTypes.string,
+      description: PropTypes.string
+    })
+  ),
+  scheduleTheme: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string,
+      color: PropTypes.string
+    })
+  ),
+  description: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 

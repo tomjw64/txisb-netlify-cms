@@ -49,10 +49,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Location Link", name: "gMapsLocationEmbedLink", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "EventHosts", name: "eventHosts", widget: "markdown"}
-          - {label: "Location Address Lines", name: "locationAddressLines", widget: "list"}
       - file: "src/pages/event/index.md"
         label: "Event"
         name: "event"
@@ -60,6 +57,17 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "event-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - label: "EventHosts"
+            name: "eventHosts"
+            widget: "list"
+            fields:
+              - {label: "Year", name: "year", widget: "string"}
+              - {label: "Host", name: "host", widget: "string"}
+          - {label: "Location Address Lines",
+             name: "locationAddressLines",
+             widget: "list",
+             field: {label: "Line", name: "line", widget: "string"}}
+          - {label: "Location Link", name: "gMapsLocationEmbedLink", widget: "string"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
