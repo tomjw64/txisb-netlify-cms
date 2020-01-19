@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: TXISB 2020
-image: /img/home-jumbotron.png
+image: /img/home-jumbotron.jpg
 heading: TXISB 2020
 subheading: Third Annual Texas Intercollegiate Swing Battle
 description: >-
