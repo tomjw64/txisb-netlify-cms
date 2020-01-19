@@ -21,22 +21,22 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item">
-                        Home
+                        <span>Home</span>
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/event">
-                        Event
+                        <span>Event</span>
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/schedule">
-                        Schedule
+                        <span>Schedule</span>
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/register">
-                        Register
+                        <span>Register</span>
                       </Link>
                     </li>
                     <li>
@@ -49,6 +49,15 @@ const Footer = class extends React.Component {
                         Admin
                       </a>
                     </li>
+                  </ul>
+                </section>
+              </div>
+              <div className="column is-6">
+                <section className="site-info">
+                  <span className="attribution-title">Attribution</span>
+                  <ul>
+                    <li>TXISB logo created by Elizabeth Christensen</li>
+                    <li>Sword and shoe icons created by Freepik</li>
                   </ul>
                 </section>
               </div>

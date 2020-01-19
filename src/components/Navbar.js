@@ -62,13 +62,13 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item is-size-6 has-text-weight-bold" to="/event">
-                Event
+                <span>Event</span>
               </Link>
               <Link className="navbar-item is-size-6 has-text-weight-bold" to="/schedule">
-                Schedule
+                <span>Schedule</span>
               </Link>
               <Link className="navbar-item is-size-6 has-text-weight-bold" to="/register">
-                Register
+                <span>Register</span>
               </Link>
             </div>
             <div className="navbar-end has-text-centered">

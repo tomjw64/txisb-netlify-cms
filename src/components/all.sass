@@ -157,12 +157,22 @@ $menu-label-color: $white-ter
   tr:nth-child(even)
     background-color: lightgrey
 
-.footer .menu > .menu-list
-  display: flex
-  flex-wrap: wrap
-  > li
-    display: block
-    margin-top: 0
+.footer
+  .menu > .menu-list
+    display: flex
+    flex-wrap: wrap
+    > li
+      display: block
+      margin-top: 0
+  .site-info
+    > .attribution-title
+      display: block
+      margin: 0
+    > ul
+      padding: 0
+      margin: 0
+      list-style-type: none
+      font-size: 0.7rem
 
 .navbar .navbar-brand
   align-items: center
@@ -172,3 +182,9 @@ $menu-label-color: $white-ter
 
 .navbar .navbar-item
   text-transform: uppercase
+  > span
+    padding-bottom: 4px
+    border-bottom: 2px solid transparent
+    transition: all 0.5s
+  &:hover > span
+    border-bottom-color: cornflowerblue

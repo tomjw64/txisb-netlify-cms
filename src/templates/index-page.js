@@ -158,6 +158,8 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
+              publicURL
             }
             text
           }
