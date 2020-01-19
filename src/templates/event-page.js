@@ -47,7 +47,6 @@ export const EventPageTemplate = ({ title, eventHosts, locationAddressLines, gMa
                   </tr>
                 </thead>
                 <tbody>
-                  {console.log(eventHosts)}
                   {eventHosts.sort((a, b) => a.year - b.year).map((event, i) => {
                     return <tr key={i}><td>{event.year}</td><td>{event.host}</td></tr>
                   })}
