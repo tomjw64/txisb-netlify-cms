@@ -59,7 +59,9 @@ const Schedule = ({scheduleTheme, scheduleData, height, unit}) => {
   return (
     <div className="schedule columns" style={{
       display: 'flex',
-      flexDirection: 'row'
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      backgroundColor: 'rgb(255,250,240)'
     }}>
       {uniqueLocations.map((location, i) => {
         return <LocationSchedule
@@ -118,7 +120,7 @@ const Event = ({scheduleTheme, event, scale, startTime, unit}) => {
       width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
-      border: '2px solid white',
+      border: '2px solid rgb(255,250,240)',
       textAlign: 'center'
     }}>
       <span>{event.title}</span>

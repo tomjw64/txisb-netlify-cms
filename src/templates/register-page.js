@@ -20,7 +20,7 @@ export const RegisterPageTemplate = ({ title, registerLink, content, contentComp
               <a href={registerLink}
                 className="is-size-3 has-text-weight-bold"
                 target="_blank" rel="noopener noreferrer">
-                <span className="button">Register</span>
+                <span className="btn">Register</span>
               </a>
             </div>
           </div>

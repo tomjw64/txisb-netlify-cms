@@ -83,6 +83,9 @@ export const IndexPageTemplate = ({
                     <Link className="btn" to="/event">
                       Event Details
                     </Link>
+                    <Link className="btn" to="/register">
+                      Register
+                    </Link>
                   </div>
                 </div>
               </div>
