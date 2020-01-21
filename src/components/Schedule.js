@@ -28,7 +28,18 @@ const timeHuman = time => {
 }
 
 const Schedule = ({scheduleTheme, scheduleData, height, unit}) => {
-  const uniqueLocations = scheduleData
+  const validScheduleData = scheduleData
+    .map(event => {
+      return {
+        location: event.location || '',
+        startTime: event.startTime || 0,
+        duration: event.duration || 0,
+        type: event.type || '',
+        title: event.title || '',
+        description: event.description || ''
+      }
+    })
+  const uniqueLocations = validScheduleData
     .map(event => event.location)
     .reduce((acc, location) => {
       if (!acc.includes(location)) {
@@ -36,7 +47,7 @@ const Schedule = ({scheduleTheme, scheduleData, height, unit}) => {
       }
       return acc
     }, [])
-  const eventsByLocation = scheduleData
+  const eventsByLocation = validScheduleData
     .reduce((acc, event) => {
       acc[event.location].push(event)
       return acc
@@ -46,11 +57,11 @@ const Schedule = ({scheduleTheme, scheduleData, height, unit}) => {
         return acc
       }, {})
     )
-  const startTime = scheduleData
+  const startTime = validScheduleData
     .reduce((acc, event) => {
       return Math.min(acc, event.startTime)
     }, 1440)
-  const endTime = scheduleData
+  const endTime = validScheduleData
     .reduce((acc, event) => {
       return Math.max(acc, event.startTime + event.duration)
     }, 0)
