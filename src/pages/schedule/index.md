@@ -12,8 +12,6 @@ scheduleTheme:
     type: misc
   - color: cornflowerblue
     type: competition
-  - color: '#98fb98'
-    type: perfcomp
 scheduleData:
   - description: Kari and Thomas
     duration: 90
@@ -33,13 +31,13 @@ scheduleData:
     startTime: 915
     title: a class 3
     type: class
-  - description: First Set
-    duration: 46
+  - description: ' '
+    duration: 45
     location: location c
     startTime: 1200
     title: Rent Party
     type: dance
-  - description: m&m
+  - description: '   '
     duration: 120
     location: location c
     startTime: 800
@@ -67,7 +65,7 @@ scheduleData:
     duration: 30
     location: location c
     startTime: 1080
-    title: Mix & Match Prelims
+    title: M&M Prelims
     type: competition
   - description: '  '
     duration: 60
@@ -75,6 +73,30 @@ scheduleData:
     startTime: 1140
     title: Public Beginner Lesson
     type: class
+  - description: '   '
+    duration: 30
+    location: location c
+    startTime: 1110
+    title: Dinner
+    type: misc
+  - description: ' '
+    duration: 15
+    location: location c
+    startTime: 1245
+    title: Performances
+    type: competition
+  - description: '   '
+    duration: 50
+    location: location c
+    startTime: 1260
+    title: Rent Party
+    type: dance
+  - description: '  '
+    duration: 30
+    location: location c
+    startTime: 1305
+    title: M&M Finals
+    type: competition
 ---
 Kaldi is the ultimate spot for coffee lovers who want to learn about their
 java’s origin and support the farmers that grew it. We take coffee production,
