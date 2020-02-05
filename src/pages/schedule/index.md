@@ -75,6 +75,12 @@ scheduleData:
     startTime: 1080
     title: Prelims
     type: perfcomp
+  - description: '  '
+    duration: 60
+    location: location c
+    startTime: 1140
+    title: Public Beginner Lesson
+    type: class
 ---
 Kaldi is the ultimate spot for coffee lovers who want to learn about their
 java’s origin and support the farmers that grew it. We take coffee production,
