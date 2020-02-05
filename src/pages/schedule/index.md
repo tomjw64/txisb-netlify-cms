@@ -2,7 +2,7 @@
 templateKey: schedule-page
 title: Schedule
 day: 'Saturday, February 29th, 2020'
-scheduleHeight: 800
+scheduleHeight: 2000
 scheduleTheme:
   - color: aliceblue
     type: class
