@@ -26,7 +26,7 @@ scheduleData:
     title: a class 2
     type: class
   - description: Kari and Thomas
-    duration: 90
+    duration: 60
     location: location a
     startTime: 915
     title: a class 3
@@ -37,14 +37,8 @@ scheduleData:
     startTime: 1200
     title: Rent Party
     type: dance
-  - description: '   '
-    duration: 120
-    location: location c
-    startTime: 800
-    title: Mix & Match Competition
-    type: competition
   - description: Keli and Kevin
-    duration: 90
+    duration: 60
     location: location b
     startTime: 915
     title: Class 4
@@ -55,11 +49,11 @@ scheduleData:
     startTime: 720
     title: Registration
     type: misc
-  - description: /break
-    duration: 60
+  - description: '     '
+    duration: 45
     location: location c
-    startTime: 690
-    title: Move to Museum
+    startTime: 975
+    title: Move to Museum/Break
     type: misc
   - description: '  '
     duration: 30
@@ -96,6 +90,30 @@ scheduleData:
     location: location c
     startTime: 1305
     title: M&M Finals
+    type: competition
+  - description: '    '
+    duration: 45
+    location: location c
+    startTime: 1335
+    title: Rent Party
+    type: dance
+  - description: '     '
+    duration: 15
+    location: location c
+    startTime: 1380
+    title: Sink or Swing
+    type: competition
+  - description: '      '
+    duration: 60
+    location: location c
+    startTime: 1395
+    title: DJ'd Music
+    type: dance
+  - description: '        '
+    duration: 60
+    location: location c
+    startTime: 1020
+    title: Competion check-in/Floor trials
     type: competition
 ---
 Kaldi is the ultimate spot for coffee lovers who want to learn about their
