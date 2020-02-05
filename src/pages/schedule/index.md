@@ -39,12 +39,6 @@ scheduleData:
     startTime: 1200
     title: Rent Party
     type: dance
-  - description: a long description that will need to break
-    duration: 120
-    location: location c
-    startTime: 800
-    title: break
-    type: misc
   - description: m&m
     duration: 120
     location: location c
@@ -69,12 +63,12 @@ scheduleData:
     startTime: 690
     title: Move to Museum
     type: misc
-  - description: Mix and Match
+  - description: '  '
     duration: 30
     location: location c
     startTime: 1080
-    title: Prelims
-    type: perfcomp
+    title: Mix & Match Prelims
+    type: competition
   - description: '  '
     duration: 60
     location: location c
