@@ -1,61 +1,80 @@
 ---
-templateKey: 'schedule-page'
-path: /schedule
+templateKey: schedule-page
 title: Schedule
-day: Saturday, February 29th, 2020
+day: 'Saturday, February 29th, 2020'
 scheduleHeight: 800
 scheduleTheme:
-  - type: class
-    color: aliceblue
-  - type: dance
-    color: '#f0dcdc'
-  - type: misc
-    color: lightgrey
-  - type: competition
-    color: cornflowerblue
-scheduleData:
-  - location: location a
-    startTime: 540
-    duration: 90
+  - color: aliceblue
     type: class
-    title: a class
-    description: Kari and Thomas
-  - location: location b
-    startTime: 540
-    duration: 90
-    type: class
-    title: a class 2
-    description: Keli and Kevin
-  - location: location a
-    startTime: 630
-    duration: 90
-    type: class
-    title: a class 3
-    description: Kari and Thomas
-  - location: location b
-    startTime: 660
-    duration: 90
+  - color: '#f0dcdc'
     type: dance
-    title: a dance 1
-    description:
-  - location: location a
-    startTime: 800
-    duration: 120
+  - color: lightgrey
     type: misc
+  - color: cornflowerblue
+    type: competition
+  - color: '#98fb98'
+    type: perfcomp
+scheduleData:
+  - description: Kari and Thomas
+    duration: 90
+    location: location a
+    startTime: 840
+    title: First Class
+    type: class
+  - description: Keli and Kevin
+    duration: 90
+    location: location b
+    startTime: 840
+    title: a class 2
+    type: class
+  - description: Kari and Thomas
+    duration: 90
+    location: location a
+    startTime: 915
+    title: a class 3
+    type: class
+  - description: First Set
+    duration: 46
+    location: location c
+    startTime: 1200
+    title: Rent Party
+    type: dance
+  - description: a long description that will need to break
+    duration: 120
+    location: location c
+    startTime: 800
     title: break
-    description: a long description that will need to break
-  - location: location b
-    startTime: 800
+    type: misc
+  - description: m&m
     duration: 120
-    type: competition
-    title: comp 1
-    description: m&m
-  - location: location c
+    location: location c
     startTime: 800
-    duration: 120
+    title: Mix & Match Competition
     type: competition
-    title: comp 1
-    description: m&m
+  - description: Keli and Kevin
+    duration: 90
+    location: location b
+    startTime: 915
+    title: Class 4
+    type: class
+  - description: '& Check in'
+    duration: 120
+    location: location a
+    startTime: 720
+    title: Registration
+    type: misc
+  - description: /break
+    duration: 60
+    location: location c
+    startTime: 690
+    title: Move to Museum
+    type: misc
+  - description: Mix and Match
+    duration: 30
+    location: location c
+    startTime: 1080
+    title: Prelims
+    type: perfcomp
 ---
 Kaldi is the ultimate spot for coffee lovers who want to learn about their
 java’s origin and support the farmers that grew it. We take coffee production,
