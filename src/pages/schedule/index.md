@@ -15,108 +15,105 @@ scheduleTheme:
 scheduleData:
   - description: Kari and Thomas
     duration: 90
-    location: location a
+    location: REC 2221
     startTime: 840
     title: First Class
     type: class
   - description: Keli and Kevin
     duration: 90
-    location: location b
+    location: REC 2225
     startTime: 840
     title: a class 2
     type: class
   - description: Kari and Thomas
     duration: 60
-    location: location a
+    location: REC 2221
     startTime: 915
-    title: a class 3
+    title: Second Class
     type: class
   - description: ' '
     duration: 45
-    location: location c
+    location: Museum of The American GI
     startTime: 1200
     title: Rent Party
     type: dance
   - description: Keli and Kevin
     duration: 60
-    location: location b
+    location: REC 2225
     startTime: 915
     title: Class 4
     type: class
   - description: '& Check in'
     duration: 120
-    location: location a
+    location: REC 2221
     startTime: 720
     title: Registration
     type: misc
   - description: '     '
     duration: 45
-    location: location c
+    location: Museum of The American GI
     startTime: 975
     title: Move to Museum/Break
     type: misc
   - description: '  '
     duration: 30
-    location: location c
+    location: Museum of The American GI
     startTime: 1080
     title: M&M Prelims
     type: competition
   - description: '  '
     duration: 60
-    location: location c
+    location: Museum of The American GI
     startTime: 1140
     title: Public Beginner Lesson
     type: class
   - description: '   '
     duration: 30
-    location: location c
+    location: Museum of The American GI
     startTime: 1110
     title: Dinner
     type: misc
   - description: ' '
     duration: 15
-    location: location c
+    location: Museum of The American GI
     startTime: 1245
     title: Performances
     type: competition
   - description: '   '
     duration: 50
-    location: location c
+    location: Museum of The American GI
     startTime: 1260
     title: Rent Party
     type: dance
   - description: '  '
     duration: 30
-    location: location c
+    location: Museum of The American GI
     startTime: 1305
     title: M&M Finals
     type: competition
   - description: '    '
     duration: 45
-    location: location c
+    location: Museum of The American GI
     startTime: 1335
     title: Rent Party
     type: dance
   - description: '     '
     duration: 15
-    location: location c
+    location: Museum of The American GI
     startTime: 1380
     title: Sink or Swing
     type: competition
   - description: '      '
     duration: 60
-    location: location c
+    location: Museum of The American GI
     startTime: 1395
     title: DJ'd Music
     type: dance
   - description: '        '
     duration: 60
-    location: location c
+    location: Museum of The American GI
     startTime: 1020
     title: Competion check-in/Floor trials
     type: competition
 ---
-Kaldi is the ultimate spot for coffee lovers who want to learn about their
-java’s origin and support the farmers that grew it. We take coffee production,
-roasting and brewing seriously and we’re glad to pass that knowledge to
-anyone.
+Want to know where and when it's happening?
