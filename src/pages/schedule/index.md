@@ -14,13 +14,13 @@ scheduleTheme:
     type: competition
 scheduleData:
   - description: Kari and Thomas
-    duration: 61
+    duration: 60
     location: REC 2221
     startTime: 840
     title: First Class
     type: class
   - description: Keli and Kevin
-    duration: 66
+    duration: 60
     location: REC 2225
     startTime: 840
     title: First Class
@@ -41,7 +41,7 @@ scheduleData:
     duration: 60
     location: REC 2225
     startTime: 915
-    title: Class 4
+    title: Second Class
     type: class
   - description: '& Check in'
     duration: 120
